@@ -414,7 +414,7 @@ _Maaf, Terjadi kendala_`;
                             }));
                         const judul = `*🛍️「 MOBILE LEGENDS 」🛍️*
 
-❗Harga Harga kapan pun bisa berubah\n\n\n`;
+❗Harga kapan pun bisa berubah\n\n\n`;
 
                         const isi = list.map((item) => {
                             const status =
@@ -432,7 +432,7 @@ _Maaf, Terjadi kendala_`;
 
                         const desk = judul + isi.join('') + caraPembelian;
 
-                        const desks = [desk, 'Cara Transaksi https://s.id/24hPv'];
+                        const desks = [desk, 'Ketik : Cara-trx'];
                         const messages = desks.map((desk) => ({
                             text: desk,
                             mentions: [sender],

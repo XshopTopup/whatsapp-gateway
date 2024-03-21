@@ -432,7 +432,7 @@ _Maaf, Terjadi kendala_`;
 
                         const desk = judul + isi.join('') + caraPembelian;
 
-                        const desks = [desk, '*[ CARA TRANSAKSI ]*\n\nContoh : Trx ML5 12345678 (1234)\nMenjadi : Trx ML5 123456781234\n\n\nJika Produk 🔴 atau produk gagal\nSegera hubungi owner bot.\n\nKetik : Owner'];
+                        const desks = [desk, 'Cara Transaksi https://s.id/24hPv'];
                         const messages = desks.map((desk) => ({
                             text: desk,
                             mentions: [sender],

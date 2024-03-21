@@ -415,7 +415,7 @@ _Maaf, Terjadi kendala_`;
                             }));
                         const judul = `*🛍️「 MOBILE LEGENDS 」🛍️*
 
-❗Harga Harga kapan pun bisa berubah\n\n\n`;
+❗Harga Harga kapan pun bisa berubah\n\n`;
 
                         const isi = list.map((item) => {
                             const status =
@@ -433,7 +433,7 @@ _Maaf, Terjadi kendala_`;
 
                         const desk = judul + isi.join('') + caraPembelian;
 
-                        const desks = [desk, '*[ CARA TRANSAKSI ]*\n\nContoh : Trx ML5 12345678 (1234)\nMenjadi : Trx ML5 123456781234\n\n\nJika Produk 🔴 atau produk gagal\nSegera hubungi owner bot.\n\nKetik : Owner'];
+                        const desks = [desk, 'Ketik : Cara-trx'];
                         const messages = desks.map((desk) => ({
                             text: desk,
                             mentions: [sender],

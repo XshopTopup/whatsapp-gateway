@@ -384,7 +384,10 @@ _Maaf, Terjadi kendala_`;
                 }
                 break;
             
-            case 'ml':
+            
+            
+            
+                case 'Topup-ml':
                 {
                     
                     if (konek.DF !== 'YA') {
@@ -409,27 +412,27 @@ _Maaf, Terjadi kendala_`;
                                         ? 'Sedang gangguan, hubungi admin'
                                         : 'Tersedia',
                             }));
-                        const judul = `*「 DAFTAR HARGA MOBILE LEGEND SERVER DF 」*
+                        const judul = `*🛍️「 MOBILE LEGENDS 」🛍️*
 
-*Harga menyesuaikan rate, kapanpun bisa berubah*\n\n`;
+❗Harga Harga kapan pun bisa berubah\n\n\n`;
 
                         const isi = list.map((item) => {
                             const status =
                                 item.stok !== 'Tersedia'
                                     ? '🔴'
-                                    : '🟢';
+                                    : '🔵';
                             const harga =
                                 item.stok !== 'Tersedia'
                                     ? 'Sedang gangguan, hubungi admin'
                                     : rp(item.harga);
-                            return `${status} *${item.nama}*\n*Harga :* ${harga}\n*SKU :* ${item.sku}\n\n`;
+                            return `${status} *${item.nama}*\n*💰 Harga :* ${harga}\n*🔥 Code :* ${item.sku}\n\n`;
                         });
 
-                        const caraPembelian = `${catatanWaktu}`;
+                        const caraPembelian = `© XshopBot`;
 
                         const desk = judul + isi.join('') + caraPembelian;
 
-                        const desks = [desk, 'Tutor transaksi ketik : Tutor-trx'];
+                        const desks = [desk, '*[ CARA TRANSAKSI ]*\n\nContoh : Trx ML5 12345678 (1234)\nMenjadi : Trx ML5 123456781234\n\n\nJika Produk 🔴 atau produk gagal\nSegera hubungi owner bot.\n\nKetik : Owner'];
                         const messages = desks.map((desk) => ({
                             text: desk,
                             mentions: [sender],
@@ -440,9 +443,6 @@ _Maaf, Terjadi kendala_`;
                     }
                 }
                 break;
-            
-            
-                
                 
                 
                 

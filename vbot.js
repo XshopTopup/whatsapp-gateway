@@ -384,7 +384,7 @@ _Maaf, Terjadi kendala_`;
                 }
                 break;
             
-            case 'topup-ml':
+            case 'ml':
                 {
                     
                     if (konek.DF !== 'YA') {
@@ -409,7 +409,7 @@ _Maaf, Terjadi kendala_`;
                                         ? 'Sedang gangguan, hubungi admin'
                                         : 'Tersedia',
                             }));
-                        const judul = `*「 MOBILE LEGENDS 」*
+                        const judul = `*「 DAFTAR HARGA MOBILE LEGEND SERVER DF 」*
 
 *Harga menyesuaikan rate, kapanpun bisa berubah*\n\n`;
 
@@ -417,31 +417,19 @@ _Maaf, Terjadi kendala_`;
                             const status =
                                 item.stok !== 'Tersedia'
                                     ? '🔴'
-                                    : '🔵';
+                                    : '🟢';
                             const harga =
                                 item.stok !== 'Tersedia'
                                     ? 'Sedang gangguan, hubungi admin'
                                     : rp(item.harga);
-                            return `${status} *${item.nama}*\n*Harga :* ${harga}\n*Code :* ${item.sku}\n\n`;
+                            return `${status} *${item.nama}*\n*Harga :* ${harga}\n*SKU :* ${item.sku}\n\n`;
                         });
 
-                        const caraPembelian =
-`Selamat Bertransaksi 🙏
-`;
+                        const caraPembelian = `${catatanWaktu}`;
 
                         const desk = judul + isi.join('') + caraPembelian;
 
-                        const desks = [desk, '*「 CARA PEMBELIAN 」*
-
-Contoh : Trx Code 12345678 (1234)
-Menjadi : Trx ML3 123456781234
-
-
-*Info❗*
-Jika produk 🔴 atau produk gagal 
-segera hubungi owner bot
-
-${catatanWaktu}'];
+                        const desks = [desk, 'Tutor transaksi ketik : Tutor-trx'];
                         const messages = desks.map((desk) => ({
                             text: desk,
                             mentions: [sender],
